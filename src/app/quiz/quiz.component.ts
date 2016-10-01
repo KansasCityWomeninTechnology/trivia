@@ -42,7 +42,6 @@ export class QuizComponent implements OnInit {
     if (this.currentQuestionIndex === this.questions.length) {
       this.quizIsOver = true;
     }
-    //this.selectedHero = hero;
   }
 
 }

@@ -3,7 +3,6 @@ export class Answer {
   answer: string;
 }
 
-
 export class Question {
   question: string;
   answers: Answer[];
