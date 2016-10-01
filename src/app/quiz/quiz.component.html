@@ -3,17 +3,20 @@
   <div class="results-header" *ngIf="quizIsOver">Results</div>
 
   <div class="quiz">
-    <div *ngFor="let question of questions; let i = index;">
-      <div class="q-and-a"
+    <div
+      class="each-question"
+      *ngFor="let question of questions; let i = index;">
+      <div
+        class="q-and-a"
         *ngIf="currentQuestionIndex === i">
-      	<h3 class="question">{{question.question}}</h3>
+        <h3 class="question">{{question.question}}</h3>
         <ul class="answers">
-          <li *ngFor="let answer of question.answers"
+          <li
+            *ngFor="let answer of question.answers"
             (click)="onSelect(answer)">{{answer.answer}}</li>
         </ul>
       </div>
     </div>
-
   </div>
 
   <div class="results" *ngIf="quizIsOver">
