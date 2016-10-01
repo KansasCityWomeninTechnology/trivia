@@ -1,17 +1,13 @@
 <div class="quiz-wrapper" *ngIf="questions">
-  <div
-    class="question-tracker"
-    *ngIf="!quizIsOver">Question {{currentQuestionIndex + 1}} of {{questions.length}}</div>
-  <div class="results-header" *ngIf="quizIsOver">Results</div>
 
   <div class="quiz">
+
     <div
       class="each-question"
       *ngFor="let question of questions; let i = index;">
-      <div
-        class="q-and-a"
-        *ngIf="currentQuestionIndex === i">
+      <div class="q-and-a">
         <h3 class="question">{{question.text}}</h3>
+
         <ul class="answers">
           <li
             *ngFor="let answer of question.answers"
@@ -19,6 +15,7 @@
         </ul>
       </div>
     </div>
+
   </div>
 
   <div class="results" *ngIf="quizIsOver">
@@ -28,4 +25,5 @@
     <div class="score">That's {{correctAnswers / questions.length * 100}}%</div>
     <div class="result-action">Grab a cocktail &amp; celebrate!</div>
   </div>
+
 </div>

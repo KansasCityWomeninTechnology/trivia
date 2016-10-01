@@ -23,8 +23,8 @@ export class QuizComponent implements OnInit {
   ngOnInit() {
     this.correctAnswers = 0;
     this.currentQuestionIndex = 0;
-    //this.questions = this.quizService.getQuestions();
     this.quizIsOver = false;
+    //this.questions = this.quizService.getQuestions();
 
     this.quizService.getQuestions()
       .subscribe(questions => this.questions = questions);
