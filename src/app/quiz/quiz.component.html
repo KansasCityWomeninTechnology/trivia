@@ -9,11 +9,11 @@
       <div
         class="q-and-a"
         *ngIf="currentQuestionIndex === i">
-        <h3 class="question">{{question.question}}</h3>
+        <h3 class="question">{{question.text}}</h3>
         <ul class="answers">
           <li
             *ngFor="let answer of question.answers"
-            (click)="onSelect(answer)">{{answer.answer}}</li>
+            (click)="onSelect(answer)">{{answer.text}}</li>
         </ul>
       </div>
     </div>

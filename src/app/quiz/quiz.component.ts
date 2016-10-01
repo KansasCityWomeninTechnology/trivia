@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Question, Answer } from './question.model';
+import { Question, Answer } from './quiz.model';
+//import {} from './quiz.model';
 
 import { QuizService } from './quiz.service';
 
@@ -30,7 +31,7 @@ export class QuizComponent implements OnInit {
   }
 
   onSelect(answer: Answer){
-    if(answer.status === 'correct') {
+    if(answer.correct) {
       this.correctAnswers ++;
       console.log('answer correct');
     }
