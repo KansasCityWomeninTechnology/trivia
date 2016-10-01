@@ -13,9 +13,9 @@ import { QuizService } from './quiz.service';
 })
 
 export class QuizComponent implements OnInit {
+  questions: Question[];
   correctAnswers: number;
   currentQuestionIndex: number;
-  questions: Question[];
   quizIsOver: boolean;
 
   constructor(private quizService: QuizService) { }
