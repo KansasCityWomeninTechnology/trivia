@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Question, Answer } from './quiz.model';
-//import {} from './quiz.model';
-
+import {Answer, Question} from './quiz.model';
 import { QuizService } from './quiz.service';
 
 @Component({
@@ -11,7 +8,6 @@ import { QuizService } from './quiz.service';
   styleUrls: ['./quiz.component.css'],
   providers: [QuizService]
 })
-
 export class QuizComponent implements OnInit {
   questions: Question[];
   correctAnswers: number;
@@ -24,8 +20,6 @@ export class QuizComponent implements OnInit {
     this.correctAnswers = 0;
     this.currentQuestionIndex = 0;
     this.quizIsOver = false;
-    //this.questions = this.quizService.getQuestions();
-
     this.quizService.getQuestions()
       .subscribe(questions => this.questions = questions);
   }
