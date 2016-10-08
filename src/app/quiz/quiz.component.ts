@@ -24,21 +24,19 @@ export class QuizComponent implements OnInit {
     this.correctAnswers = 0;
     this.currentQuestionIndex = 0;
     this.quizIsOver = false;
-    //this.questions = this.quizService.getQuestions();
-
     this.quizService.getQuestions()
       .subscribe(questions => this.questions = questions);
   }
 
   onSelect(answer: Answer){
-    if(answer.correct) {
-      this.correctAnswers ++;
+    if (answer.correct) {
+      this.correctAnswers++;
       console.log('answer correct');
     }
     else {
       console.log('answer wrong');
     }
-    this.currentQuestionIndex ++;
+    this.currentQuestionIndex++;
 
     if (this.currentQuestionIndex === this.questions.length) {
       this.quizIsOver = true;
