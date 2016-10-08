@@ -1,12 +1,10 @@
 # Using Angular CLI on Windows
 
-To use Angular CLI on Windows, it is recommended to `Run as Administrator` (for `Git Bash` or whatever CLI tool you are using). Othwerwise, your commands will take a bit and you'll be twiddling your thumbs for a bit. This is especially true for the `ng build`, `ng serve` and `ng github-pages:deploy` commands. Here are some helpful tips for running your CLI as _admin_.
+To use Angular CLI on Windows, it is recommended to `Run as Administrator` (for `Git Bash` or whatever CLI tool you are using). Othwerwise, your commands will take a bit and you'll be twiddling your thumbs or tapping your nails. This is especially true for the `ng build`, `ng serve` and `ng github-pages:deploy` commands. Here are some helpful tips for running your CLI as _admin_.
 
 *Notes:*
-
-_Below I use `<` & `>` to surround values that you should replace for your username or something. When you replace these values with your own *do not include* the `<` and `>`._
-
-_From this point on, I'm going to assume the CLI tool you're using is *Git Bash*._
+- _Below I use `<` & `>` to surround values that you should replace for your username or something. When you replace these values with your own *do not include* the `<` and `>`._
+- _From this point on, I'm going to assume the CLI tool you're using is *Git Bash*._
 
 ## How to Run as Admin
 
@@ -28,10 +26,11 @@ When attempting to run an `ng` command (say `ng -v` or `ng new ...`), do you see
 
 _Angular CLI may not have installed correctly. If so, it could be you need a more recent version of `Node` or `npm`._
 
-If Angular CLI did install correctly & you're getting `command not found`, try this:
-In _Git Bash_, type: `npm config get prefix`
+If Angular CLI did install correctly & you're getting `command not found`, type this in _Git Bash_:
+`npm config get prefix`
+
+You should get something that looks a bit like: `C:\Users\<yourUsername>\AppData\Roaming\npm`
 _This will provide you the path to where your `npm` command ... TODO_
-`C:\Users\<yourUsername>\AppData\Roaming\npm`
 
 Copy this into a text file & reformat it to look like this:
 `/c/Users/<yourUsername>/AppData/Roaming/npm`
