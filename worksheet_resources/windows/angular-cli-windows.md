@@ -35,14 +35,14 @@ _This will provide you the path to where your `npm` command ... TODO_
 Copy this into a text file & reformat it to look like this:
 `/c/Users/<yourUsername>/AppData/Roaming/npm`
 
-_*Tip*: `ctrl + v` doesn't work to paste into Git Bash. Instead use `shift + insert` or `shift + ins`._
+_*Tip*: `ctrl + v` doesn't work to paste into _Git Bash_. Instead use `shift + insert` or `shift + ins`._
 
-You're going to add this reformatted path, to your `PATH` variable. In Git Bash, type: `PATH=$PATH:<yourReformattedPathHere>` [should look similar to this `PATH=$PATH:/c/Users/bellafaith/AppData/Roaming/npm`]
+You're going to add this reformatted path, to your `PATH` variable. In _Git Bash_, type: `PATH=$PATH:<yourReformattedPathHere>` [should look similar to this `PATH=$PATH:/c/Users/bellafaith/AppData/Roaming/npm`]
 
-Try `ng version` in Git Bash again ... did it work?
+Try `ng version` in _Git Bash_ again ... did it work?
 
 ## Running as Admin? Path to your *trivia* folder may be a bit different
 
-If you're running Git Bash as admin & the account you're actively logged into on your computer is _*not*_ the admin account, the path to access your directory in Git Bash may be slightly different. You may not see your `CodingAndCocktails` directory in your `/` or `~` folder. Try the following in Git Bash:
+If you're running _Git Bash_ as admin & the account you're actively logged into on your computer is *not* the admin account, the path to access the directory [where your code lives] via _Git Bash_ may be slightly different. You may not see your `CodingAndCocktails` directory in your `/` or `~` folder. Try the following in _Git Bash_:
 
 `cd /c/Users/<yourUsername>/CodingAndCocktails/trivia`
