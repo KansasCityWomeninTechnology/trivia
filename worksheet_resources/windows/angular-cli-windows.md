@@ -35,7 +35,7 @@ When attempting to run an `ng` command (say `ng -v` or `ng new ...`), do you see
 - Uninstall _Angular CLI_  
   In Git Bash, type `npm uninstall -g angular-cli`
 
-- Clear _npm_ Cache to be safe  
+- Clear _npm_ cache to be safe  
   In Git Bash, type `npm cache clean`
 
 - Install _Angular CLI_  
