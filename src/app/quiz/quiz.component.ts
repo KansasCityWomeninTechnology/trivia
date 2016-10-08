@@ -26,13 +26,13 @@ export class QuizComponent implements OnInit {
 
   onSelect(answer: Answer){
     if(answer.correct) {
-      this.correctAnswers ++;
+      this.correctAnswers++;
       console.log('answer correct');
     }
     else {
       console.log('answer wrong');
     }
-    this.currentQuestionIndex ++;
+    this.currentQuestionIndex++;
 
     if (this.currentQuestionIndex === this.questions.length) {
       this.quizIsOver = true;
