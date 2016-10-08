@@ -24,9 +24,24 @@ When attempting to run an `ng` command (say `ng -v` or `ng new ...`), do you see
 
 `bash: ng: command not found`
 
-_Angular CLI may not have installed correctly. If so, it could be you need a more recent version of `Node` or `npm`._
+#### _Angular CLI may not have installed correctly. If so, it could be you need a more recent version of `Node` or `npm`._
 
-If _Angular CLI_ did install correctly & you're getting `command not found`, follow these steps:
+- Download & install latest version of _Node_ (needs to be version 6 or higher)
+  https://nodejs.org/en/download/
+
+- Update version of _npm_
+  In Git Bash, type `npm install npm@latest -g`
+
+- Uninstall _Angular CLI_
+  In Git Bash, type `npm uninstall -g angular-cli`
+
+- Clear _npm_ Cache to be safe
+  In Git Bash, type `npm cache clean`
+
+- Install _Angular CLI_
+  In Git Bash, type `npm install -g angular-cli@latest`
+
+### If _Angular CLI_ did install correctly & you're getting `command not found`, follow these steps:
 
 - Type this in _Git Bash_: `npm config get prefix`  
   You should get something that looks a bit like: `C:\Users\<yourUsername>\AppData\Roaming\npm`  
@@ -35,7 +50,7 @@ If _Angular CLI_ did install correctly & you're getting `command not found`, fol
 - Copy this into a text file & reformat it to look like this:  
   `/c/Users/<yourUsername>/AppData/Roaming/npm`
 
-  _*Tip*: `ctrl + v` doesn't work to paste into *Git Bash*. Instead use `shift + insert` or `shift + ins`._
+  *Tip*: `ctrl + v` doesn't work to paste into _Git Bash_. Instead use `shift + insert` or `shift + ins`.
 
 - Add the newly reformatted path, to your `PATH` variable.  
   In _Git Bash_, type: `PATH=$PATH:<yourReformattedPathHere>`  
