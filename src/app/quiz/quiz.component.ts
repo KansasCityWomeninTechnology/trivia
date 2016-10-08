@@ -25,7 +25,7 @@ export class QuizComponent implements OnInit {
   }
 
   onSelect(answer: Answer){
-    if(answer.correct) {
+    if (answer.correct) {
       this.correctAnswers++;
       console.log('answer correct');
     }
