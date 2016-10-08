@@ -29,17 +29,17 @@ _Angular CLI may not have installed correctly. If so, it could be you need a mor
 If _Angular CLI_ did install correctly & you're getting `command not found`, follow these steps:
 
 - Type this in _Git Bash_: `npm config get prefix`  
-⋅⋅You should get something that looks a bit like: `C:\Users\<yourUsername>\AppData\Roaming\npm`  
-⋅⋅_This will provide you the path to where your `npm` command ... TODO_
+  You should get something that looks a bit like: `C:\Users\<yourUsername>\AppData\Roaming\npm`  
+  _This will provide you the path to where your `npm` command ... TODO_
 
 - Copy this into a text file & reformat it to look like this:  
-⋅⋅`/c/Users/<yourUsername>/AppData/Roaming/npm`
+  `/c/Users/<yourUsername>/AppData/Roaming/npm`
 
-⋅⋅_*Tip*: `ctrl + v` doesn't work to paste into *Git Bash*. Instead use `shift + insert` or `shift + ins`._
+  _*Tip*: `ctrl + v` doesn't work to paste into *Git Bash*. Instead use `shift + insert` or `shift + ins`._
 
 - Add the newly reformatted path, to your `PATH` variable.  
-⋅⋅In _Git Bash_, type: `PATH=$PATH:<yourReformattedPathHere>`  
-⋅⋅[should look similar to this `PATH=$PATH:/c/Users/bellafaith/AppData/Roaming/npm`]
+  In _Git Bash_, type: `PATH=$PATH:<yourReformattedPathHere>`  
+  [_should look similar to this_ `PATH=$PATH:/c/Users/bellafaith/AppData/Roaming/npm`]
 
 - Try `ng version` in _Git Bash_ again ... did it work?
 
