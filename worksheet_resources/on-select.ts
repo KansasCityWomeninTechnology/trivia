@@ -1,5 +1,5 @@
   onSelect(answer: Answer){
-    if(answer.correct) {
+    if (answer.correct) {
       console.log('answer correct');
     }
     else {
