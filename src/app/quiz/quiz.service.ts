@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+
+import { Question } from './quiz.model';
 
 @Injectable()
 export class QuizService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getQuestions() {
-    return this.http.get('//cocktail-trivia-api.herokuapp.com/api/sample')
-      .map((res: Response) => res.json());
+  getQuestions(): Observable<Question[]> {
+    return this.http.get<Question[]>('//cocktail-trivia-api.herokuapp.com/api/sample');
   }
 
 }
