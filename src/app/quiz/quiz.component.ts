@@ -5,8 +5,7 @@ import { QuizService } from './quiz.service';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.css'],
-  providers: [QuizService]
+  styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
   questions: Question[];
