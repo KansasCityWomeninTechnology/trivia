@@ -3,7 +3,7 @@
    <section *ngIf="currentQuestionIndex < questions.length else results">
      <p class="question-tracker">Question {{currentQuestionIndex + 1}} of {{questions.length}}</p>
      <app-trivia-question
-      *ngFor="let item of questions; index as i"
+      *ngFor="let item of questions; let i = index"
       [question]="item"
       [shouldDisplay]="i === currentQuestionIndex"
       (answeredEvent)="onQuestionAnswered($event)">
@@ -11,7 +11,7 @@
    </section>
 
   <ng-template #results>
-    <section class="results" *ngIf="true">
+    <section class="results">
       <p>
         You answered {{correctAnswers}} out of {{questions.length}} questions correctly.
       </p>
